@@ -183,9 +183,8 @@ body {
   margin-top: 0.25rem;
 }
 
-.hero__img img {
-  position: relative !important;
-  z-index: -1;
+.hero__img {
+  min-height: 18.75rem;
 }
 
 .hero__content {
@@ -308,6 +307,16 @@ body {
 /* Desktop Layout */
 /* *************** */
 
+@media (min-width: 48em) {
+  .hero__side {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (min-width: 64em) {
   .container {
     width: min(74em, 90%);
@@ -375,6 +384,10 @@ body {
   }
 
   /* Right Side Section */
+
+  .hero__side {
+    display: block;
+  }
 
   .hero__side h1 {
     font-size: var(--fs-hl);

@@ -6,14 +6,14 @@ const HeroBanner = () => {
   const [currentSize, setCurrentSize] = useState("");
 
   useEffect(() => {
-    windowWidth <= 768 ? setCurrentSize("mobile") : setCurrentSize("desktop");
+    windowWidth <= 1024 ? setCurrentSize("mobile") : setCurrentSize("desktop");
   }, [windowWidth]);
 
   const bannerImg = currentSize === "mobile" ? bannerMbl : bannerDsk;
 
   return (
     <div className="hero__img">
-      <img src={bannerImg} alt="" width={730} height={300} />
+      <img src={bannerImg} alt="" width={1460} height={600} />
     </div>
   );
 };
