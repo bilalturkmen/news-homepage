@@ -17,23 +17,21 @@ const headerNavbar = ({ links }: NavlinkProps) => {
     <nav className="header__nav">
       <img src={logoImg} alt="" width={65} height={40} />
       <div className={`${isOpen ? "mobile__nav--bg" : ""}`} />
-      <ul ref={navRef}>
+      <ul ref={navRef} aria-label="Navigation menu">
         {links.map(({ url, title }) => (
-          <li key={title}>
-            <a href={url} aria-label={title}>
-              {title}
-            </a>
+          <li key={title} aria-label={title}>
+            <a href={url}>{title}</a>
           </li>
         ))}
         <button
           className="btn btn--close"
-          aria-label="Close Menu"
+          aria-label="Close menu"
           onClick={showNavbar}
         >
           <img src={menuClose} aria-hidden={true} width={32} height={31} />
         </button>
       </ul>
-      <button className="btn" aria-label="Open Menu" onClick={showNavbar}>
+      <button className="btn" aria-label="Open menu" onClick={showNavbar}>
         <img src={menuOpen} aria-hidden={true} width={40} height={17} />
       </button>
     </nav>
