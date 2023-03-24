@@ -13,6 +13,8 @@ export default function Home() {
     <div className="container">
       <header>
         <Navbar links={jsonData.navLinks} />
+      </header>
+      <main>
         <article className="hero">
           <section className="hero__news">
             <HeroBanner />
@@ -22,8 +24,6 @@ export default function Home() {
             <SideNewsList title="New" news={jsonData.sideNews} />
           </aside>
         </article>
-      </header>
-      <main>
         <FeaturedNewsList news={jsonData.featuredNews} />
       </main>
       <footer>
