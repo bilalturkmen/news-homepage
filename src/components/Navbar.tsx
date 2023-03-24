@@ -15,7 +15,7 @@ const headerNavbar = ({ links }: NavlinkProps) => {
   };
   return (
     <nav className="header__nav">
-      <img src={logoImg} alt="" />
+      <img src={logoImg} alt="" width={65} height={40} />
       <div className={`${isOpen ? "mobile__nav--bg" : ""}`} />
       <ul role="list" ref={navRef} aria-expanded="false">
         {links.map(({ url, title }) => (

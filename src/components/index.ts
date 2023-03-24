@@ -7,8 +7,8 @@ import FeaturedNewsList from "./FeaturedNewsList";
 import FooterAttribution from "./FooterAttribution";
 
 // import images
-import bannerDsk from "../assets/image-web-3-desktop.jpg";
-import bannerMbl from "../assets/image-web-3-mobile.jpg";
+import bannerDsk from "../assets/image-web-3-desktop.webp";
+import bannerMbl from "../assets/image-web-3-mobile.webp";
 import logoImg from "../assets/logo.svg";
 import menuOpen from "../assets/icon-menu.svg";
 import menuClose from "../assets/icon-menu-close.svg";
