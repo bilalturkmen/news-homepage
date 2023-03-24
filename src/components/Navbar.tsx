@@ -20,7 +20,7 @@ const headerNavbar = ({ links }: NavlinkProps) => {
       <ul ref={navRef} className="menu ">
         {links.map(({ url, title }) => (
           <li key={title}>
-            <a href={url}>{title}</a>
+            <a href="#">{title}</a>
           </li>
         ))}
         <button
