@@ -17,13 +17,11 @@ const headerNavbar = ({ links }: NavlinkProps) => {
     <nav className="header__nav">
       <img src={logoImg} alt="" width={65} height={40} />
       <div className={`${isOpen ? "mobile__nav--bg" : ""}`} />
-      <ul ref={navRef} className="menu ">
+      <div ref={navRef} className="menu ">
         {links.map(({ url, title }) => (
-          <li key={title}>
-            <a href={url} onClick={showNavbar}>
-              {title}
-            </a>
-          </li>
+          <a key={title} href={url} onClick={showNavbar}>
+            {title}
+          </a>
         ))}
         <button
           className="btn btn--close"
@@ -32,7 +30,7 @@ const headerNavbar = ({ links }: NavlinkProps) => {
         >
           <img src={menuClose} aria-hidden={true} width={32} height={31} />
         </button>
-      </ul>
+      </div>
       <button className="btn" aria-label="Open menu" onClick={showNavbar}>
         <img src={menuOpen} aria-hidden={true} width={40} height={17} />
       </button>

@@ -116,7 +116,7 @@ body {
 
 /* Mobile Menu */
 
-.header__nav ul {
+.header__nav .menu {
   display: grid;
   grid-auto-flow: row;
   justify-content: start;
@@ -136,18 +136,18 @@ body {
   list-style: none;
 }
 
-.header__nav ul.mobile {
+.header__nav .menu.mobile {
   transition: transform 0.3s ease;
   transform: none;
 }
 
-.header__nav li a {
+.header__nav .menu a {
   font-size: var(--fs-s);
   text-decoration: none;
   color: var(--clr-darkblue);
 }
 
-.header__nav li a:hover {
+.header__nav .menu a:hover {
   color: var(--clr-s-red);
 }
 
@@ -349,7 +349,7 @@ body {
     display: none;
   }
 
-  .header__nav ul {
+  .header__nav .menu {
     grid-auto-flow: column;
     align-content: center;
     grid-gap: 2.4rem;
