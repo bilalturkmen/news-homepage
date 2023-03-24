@@ -13,7 +13,7 @@ const HeroBanner = () => {
 
   return (
     <div className="hero__img">
-      <img src={bannerImg} alt="" sizes="(max-width: 768px) 100vw,100vw" />
+      <img src={bannerImg} alt="" width={730} height={300} />
     </div>
   );
 };
