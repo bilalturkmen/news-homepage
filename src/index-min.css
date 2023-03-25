@@ -5,7 +5,6 @@
   font-display: swap;
   src: url(./assets/inter-400.woff2) format("woff2");
 }
-
 @font-face {
   font-family: "Inter";
   font-style: normal;
@@ -13,7 +12,6 @@
   font-display: swap;
   src: url(./assets/inter-700.woff2) format("woff2");
 }
-
 @font-face {
   font-family: "Inter";
   font-style: normal;
@@ -48,6 +46,7 @@
   --lh-162: 1.625rem;
   --lh-20: 2rem;
 }
+
 /* default rules */
 *,
 *::before,
@@ -56,7 +55,6 @@
   margin: 0;
   padding: 0;
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -66,31 +64,10 @@ img {
   height: auto;
 }
 
-ul[role="list"] {
-  list-style: none;
-}
-
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
 body {
   min-height: 100vh;
   background: var(--clr-o-white);
   font-family: "Inter", sans-serif;
-
   font-size: var(--fs-xs);
   font-weight: var(--fw-400);
   color: var(--clr-dg-blue);
@@ -99,7 +76,6 @@ body {
 /* *************** */
 /* Mobile Layout */
 /* *************** */
-
 .container {
   width: min(90em, 91.5%);
   margin-inline: auto;
@@ -115,7 +91,6 @@ body {
 }
 
 /* Mobile Menu */
-
 .header__nav .menu {
   display: grid;
   grid-auto-flow: row;
@@ -174,7 +149,6 @@ body {
 }
 
 /* Banner Section */
-
 .hero {
   display: grid;
   grid-template-columns: 1fr;
@@ -222,7 +196,6 @@ body {
 }
 
 /* Right Side Section */
-
 .hero__side {
   padding: 1.81rem 1.48rem;
   background: var(--clr-vd-blue);
@@ -262,7 +235,6 @@ body {
 }
 
 /* Bottom Featured Section */
-
 .features {
   margin-top: 4.45rem;
   display: grid;
@@ -305,7 +277,6 @@ body {
 /* *************** */
 /* Desktop Layout */
 /* *************** */
-
 @media (min-width: 48em) {
   .hero__side {
     display: grid;
@@ -325,7 +296,6 @@ body {
   }
 
   /* Desktop Menu */
-
   .header__nav {
     height: 11.22rem;
     padding-top: 2.45rem;
@@ -359,7 +329,6 @@ body {
   }
 
   /* Banner Section */
-
   .hero {
     grid-template-columns: 0.676fr 0.324fr;
     gap: 1.88rem;
@@ -383,7 +352,6 @@ body {
   }
 
   /* Right Side Section */
-
   .hero__side {
     display: block;
   }
@@ -393,7 +361,6 @@ body {
   }
 
   /* Bottom Featured Section */
-
   .features {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -402,7 +369,6 @@ body {
 /* *************** */
 /* Footer */
 /* *************** */
-
 .footer {
   background: var(--clr-darkblue);
   margin-top: 5rem;
