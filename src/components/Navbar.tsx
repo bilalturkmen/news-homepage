@@ -16,7 +16,10 @@ const headerNavbar = ({ links }: NavlinkProps) => {
   return (
     <nav className="header__nav">
       <img src={logoImg} alt="" width={65} height={40} />
-      <div className={`${isOpen ? "mobile__nav--bg" : ""}`} />
+      <div
+        className={`${isOpen ? "mobile__nav--bg" : ""}`}
+        onClick={showNavbar}
+      />
       <div ref={navRef} className="menu ">
         {links.map(({ url, title }) => (
           <a key={title} href={url} onClick={showNavbar}>
