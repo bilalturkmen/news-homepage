@@ -123,10 +123,29 @@ body {
   font-size: var(--fs-s);
   text-decoration: none;
   color: var(--clr-vd-blue);
+  position: relative;
 }
 
 .header__nav .menu a:hover {
   color: var(--clr-s-red);
+}
+
+.header__nav .menu a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--clr-s-red);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.header__nav .menu a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .header__nav .btn {
