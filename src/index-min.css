@@ -22,12 +22,12 @@
 
 :root {
   /* Colors */
-  --clr-s-orange: hsl(35, 77%, 62%);
+  --clr-s-orange: #c7d5f9;
   --clr-s-red: hsl(5, 85%, 63%);
   --clr-o-white: hsl(36, 100%, 99%);
   --clr-g-blue: hsl(233, 8%, 79%);
   --clr-dg-blue: hsl(236, 13%, 42%);
-  --clr-vd-blue: hsl(240, 100%, 5%);
+  --clr-vd-blue: #061a57;
 
   --fs-hxl: 3.5rem;
   --fs-hl: 2.5rem;
@@ -90,6 +90,10 @@ body {
   position: relative;
 }
 
+.header__nav img:hover {
+  cursor: pointer;
+}
+
 /* Mobile Menu */
 .header__nav .menu {
   display: grid;
@@ -118,7 +122,7 @@ body {
 .header__nav .menu a {
   font-size: var(--fs-s);
   text-decoration: none;
-  color: var(--clr-darkblue);
+  color: var(--clr-vd-blue);
 }
 
 .header__nav .menu a:hover {
@@ -144,7 +148,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: var(--clr-vd-blue);
-  opacity: 0.6;
+  opacity: 0.7;
   z-index: 1;
 }
 
@@ -239,6 +243,7 @@ body {
   margin-top: 4.45rem;
   display: grid;
   grid-gap: 1.9rem;
+  list-style: none;
 }
 
 .feature--item {
@@ -299,15 +304,6 @@ body {
   .header__nav {
     height: 11.22rem;
     padding-top: 2.45rem;
-  }
-
-  .header__nav img {
-    transition: transform 300ms ease;
-  }
-
-  .header__nav img:hover {
-    transform: scale(1.05);
-    cursor: pointer;
   }
 
   .header__nav .btn {
