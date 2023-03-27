@@ -3,7 +3,7 @@ interface featuredNewsListProps {
 }
 
 const FeaturedNewsList: React.FC<featuredNewsListProps> = ({ news }) => (
-  <ul role="list" className="features">
+  <ul className="features">
     {news.map(({ image, url, id, title, description }) => (
       <li key={title}>
         <div className="feature--item">

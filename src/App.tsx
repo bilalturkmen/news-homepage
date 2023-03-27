@@ -16,10 +16,10 @@ export default function Home() {
       </header>
       <main>
         <article className="hero">
-          <section className="hero__news">
+          <div className="hero__news">
             <HeroBanner />
             <HeroNews news={jsonData.heroNews} />
-          </section>
+          </div>
           <aside className="hero__side">
             <SideNewsList title="New" news={jsonData.sideNews} />
           </aside>
