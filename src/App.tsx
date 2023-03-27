@@ -16,6 +16,7 @@ export default function Home() {
       </header>
       <main>
         <article className="hero">
+          <h1 className="sr-only">w news hompage</h1>
           <div className="hero__news">
             <HeroBanner />
             <HeroNews news={jsonData.heroNews} />

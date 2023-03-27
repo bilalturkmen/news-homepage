@@ -16,7 +16,6 @@ const headerNavbar = ({ links }: NavlinkProps) => {
   return (
     <nav className="header__nav">
       <img src={logoImg} alt="" width={65} height={40} />
-      <h1 className="sr-only">w news hompage</h1>
       <div
         className={`${isOpen ? "mobile__nav--bg" : ""}`}
         onClick={showNavbar}
