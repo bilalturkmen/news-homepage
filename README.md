@@ -3,7 +3,7 @@
   <h3>
     <a href="https://lighthearted-crumble-30d48f.netlify.app/"> Live View </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/solutions/skilled-elearning-lp-with-react-ts-uyDZ1GQV9W"> Solution Page </a>
+    <a href="https://www.frontendmentor.io/solutions/news-homepage-react-with-ts-95FhmSWQp9"> Solution Page </a>
   </h3>
 </div>
 <div>
@@ -12,8 +12,9 @@
 
 ## 👍 My Challenges:
 
-- Custom components and Responsive navbar creating.
-- Working for image and static page performance.
+- Custom components and Responsive navbar created.
+- i tried to get all the data from a single json file.
+- and worked for the good user experience.
 - Getting high rate from [PageSpeed Insights](https://pagespeed.web.dev/analysis/https-lighthearted-crumble-30d48f-netlify-app/pclrhdjyg4?form_factor=mobile)
 
 ![](./public/screenshot.jpg)
