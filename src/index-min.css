@@ -181,6 +181,16 @@ body {
 
 .hero__img {
   min-height: 18.75rem;
+  overflow: hidden;
+}
+
+.hero__img img {
+  transition: transform 300ms ease;
+}
+
+.hero__img img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .hero__content {
@@ -269,6 +279,16 @@ body {
   display: grid;
   grid-template-columns: 0.305fr 0.695fr;
   grid-gap: 1.45rem;
+  overflow: hidden;
+}
+
+.feature--item img {
+  transition: transform 300ms ease;
+}
+
+.feature--item img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .item--content {
