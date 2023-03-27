@@ -235,7 +235,7 @@ body {
   color: var(--clr-o-white);
 }
 
-.hero__side h1 {
+.hero__side h2 {
   font-size: var(--fs-hm);
   color: var(--clr-s-orange);
 }
@@ -252,11 +252,11 @@ body {
   padding-bottom: 0;
 }
 
-.side__news h2 {
+.side__news h3 {
   font-size: var(--fs-hxs);
 }
 
-.side__news h2:hover {
+.side__news h3:hover {
   color: var(--clr-s-orange);
   cursor: pointer;
 }
@@ -391,7 +391,7 @@ body {
     display: block;
   }
 
-  .hero__side h1 {
+  .hero__side h2 {
     font-size: var(--fs-hl);
   }
 

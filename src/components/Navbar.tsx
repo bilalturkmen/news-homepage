@@ -31,11 +31,11 @@ const headerNavbar = ({ links }: NavlinkProps) => {
           aria-label="Close menu"
           onClick={showNavbar}
         >
-          <img src={menuClose} aria-hidden={true} width={32} height={31} />
+          <img src={menuClose} alt="" width={32} height={31} />
         </button>
       </div>
       <button className="btn" aria-label="Open menu" onClick={showNavbar}>
-        <img src={menuOpen} aria-hidden={true} width={40} height={17} />
+        <img src={menuOpen} alt="" width={40} height={17} />
       </button>
     </nav>
   );

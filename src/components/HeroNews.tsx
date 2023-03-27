@@ -7,11 +7,11 @@ const HeroNews = ({ news }: heroNewsProps) => {
     <section className="hero__content">
       {news.map(({ title, description, readlink, url }) => (
         <>
-          <h1>{title} </h1>
-          <span>
+          <h1>{title}</h1>
+          <div>
             <p>{description}</p>
             <a href={url}>{readlink}</a>
-          </span>
+          </div>
         </>
       ))}
     </section>

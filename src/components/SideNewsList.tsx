@@ -5,10 +5,10 @@ interface sideNewsListProps {
 
 const SideNewsList: React.FC<sideNewsListProps> = ({ title, news }) => (
   <>
-    <h1>{title}</h1>
+    <h2>{title}</h2>
     {news.map(({ id, url, title, description }) => (
       <section key={id} className="side__news">
-        <h2>{title}</h2>
+        <h3>{title}</h3>
         <p>{description}</p>
       </section>
     ))}
