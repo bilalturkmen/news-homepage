@@ -10,7 +10,9 @@ const FeaturedNewsList: React.FC<featuredNewsListProps> = ({ news }) => (
           <img src={image.src} alt={image.alt} width={125} height={100} />
           <div className="item--content">
             <span>{id}</span>
-            <h2>{title}</h2>
+            <h2>
+              <a href={url}>{title}</a>
+            </h2>
             <p>{description}</p>
           </div>
         </div>

@@ -256,9 +256,12 @@ body {
   font-size: var(--fs-hxs);
 }
 
-.side__news h3:hover {
+.side__news a {
+  color: var(--clr-o-white);
+  text-decoration: none;
+}
+.side__news a:hover {
   color: var(--clr-s-orange);
-  cursor: pointer;
 }
 
 .side__news p {
@@ -308,9 +311,12 @@ body {
   margin-top: 0.7rem;
 }
 
-.item--content h2:hover {
+.item--content a {
+  color: var(--clr-vd-blue);
+  text-decoration: none;
+}
+.item--content a:hover {
   color: var(--clr-s-red);
-  cursor: pointer;
 }
 
 .item--content p {

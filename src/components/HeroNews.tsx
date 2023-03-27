@@ -10,7 +10,9 @@ const HeroNews = ({ news }: heroNewsProps) => {
           <h2>{title}</h2>
           <div>
             <p>{description}</p>
-            <a href={url}>{readlink}</a>
+            <a href={url} aria-label={`Read more of the ${title}`}>
+              {readlink}
+            </a>
           </div>
         </>
       ))}
