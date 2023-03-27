@@ -197,7 +197,7 @@ body {
   margin-top: 1.85rem;
 }
 
-.hero__content h1 {
+.hero__content h2 {
   font-size: var(--fs-hl);
   font-weight: var(--fw-800);
   color: var(--clr-vd-blue);
@@ -375,7 +375,7 @@ body {
     gap: 1.45rem;
   }
 
-  .hero__content h1 {
+  .hero__content h2 {
     max-width: 9ch;
     font-size: var(--fs-hxl);
     line-height: var(--fs-hxl);
@@ -421,4 +421,18 @@ body {
   color: var(--clr-white);
   text-decoration: underline;
   opacity: 1;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
 }
