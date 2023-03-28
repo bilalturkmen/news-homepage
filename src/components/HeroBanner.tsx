@@ -6,7 +6,7 @@ const HeroBanner = () => {
   const [currentSize, setCurrentSize] = useState("");
 
   useEffect(() => {
-    windowWidth <= 1024 ? setCurrentSize("mobile") : setCurrentSize("desktop");
+    setCurrentSize(windowWidth <= 1024 ? "mobile" : "desktop");
   }, [windowWidth]);
 
   const bannerImg = currentSize === "mobile" ? bannerMbl : bannerDsk;
