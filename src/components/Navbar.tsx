@@ -25,11 +25,13 @@ const headerNavbar = ({ links }: NavlinkProps) => {
       <button className="btn" aria-label="open menu" onClick={showNavbar}>
         <img src={menuOpen} alt="" width={40} height={17} />
       </button>
-      <div role="menu" aria-label="menu" ref={navRef} className="menu ">
+      <ul role="menu" aria-label="menu" ref={navRef} className="menu ">
         {links.map(({ url, title }) => (
-          <a role="menuitem" key={title} href={url} onClick={showNavbar}>
-            {title}
-          </a>
+          <li role="presentation">
+            <a role="menuitem" key={title} href={url} onClick={showNavbar}>
+              {title}
+            </a>
+          </li>
         ))}
         <button
           className="btn btn--close"
@@ -38,7 +40,7 @@ const headerNavbar = ({ links }: NavlinkProps) => {
         >
           <img src={menuClose} alt="" width={32} height={31} />
         </button>
-      </div>
+      </ul>
     </nav>
   );
 };
