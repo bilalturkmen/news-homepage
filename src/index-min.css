@@ -131,6 +131,7 @@ body {
   text-decoration: none;
   color: var(--clr-vd-blue);
   position: relative;
+  width: fit-content;
 }
 
 .header__nav .menu a:hover {
