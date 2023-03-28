@@ -30,7 +30,7 @@ const headerNavbar = ({ links }: NavlinkProps) => {
       >
         <img src={menuOpen} alt="" width={40} height={17} />
       </button>
-      <div role="menu" ref={navRef} className="menu ">
+      <div id="menu" role="menu" ref={navRef} className="menu ">
         {links.map(({ url, title }) => (
           <a
             role="menuitem"
