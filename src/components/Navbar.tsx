@@ -22,10 +22,15 @@ const headerNavbar = ({ links }: NavlinkProps) => {
         className={`${isOpen ? "mobile__nav--bg" : ""}`}
         onClick={showNavbar}
       />
-      <button aria-label="open menu" className="btn" onClick={showNavbar}>
+      <button id="OpenMenu" className="btn" onClick={showNavbar}>
         <img src={menuOpen} alt="" width={40} height={17} />
       </button>
-      <ul role="menu" aria-label="menu" ref={navRef} className="menu ">
+      <ul
+        role="menu"
+        aria-labelledby="CloseMenu"
+        ref={navRef}
+        className="menu "
+      >
         {links.map(({ url, title }) => (
           <li role="none">
             <a role="menuitem" key={title} href={url} onClick={showNavbar}>
@@ -33,12 +38,7 @@ const headerNavbar = ({ links }: NavlinkProps) => {
             </a>
           </li>
         ))}
-        <button
-          role="none"
-          aria-label="close menu"
-          className="btn btn--close"
-          onClick={showNavbar}
-        >
+        <button id="CloseMenu" className="btn btn--close" onClick={showNavbar}>
           <img src={menuClose} alt="" width={32} height={31} />
         </button>
       </ul>
