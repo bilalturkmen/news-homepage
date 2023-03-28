@@ -44,7 +44,7 @@ const headerNavbar = ({ links }: NavlinkProps) => {
             </a>
           </li>
         ))}
-        <li>
+        <li role="none">
           <button
             aria-owns="menu"
             aria-controls="menu"
