@@ -33,7 +33,7 @@ const headerNavbar = ({ links }: NavlinkProps) => {
             </a>
           </li>
         ))}
-        <li role="none">
+        <li>
           <img
             src={menuClose}
             alt=""
