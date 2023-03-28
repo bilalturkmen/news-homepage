@@ -4,9 +4,9 @@ interface heroNewsProps {
 
 const HeroNews = ({ news }: heroNewsProps) => {
   return (
-    <section className="hero__content">
+    <>
       {news.map(({ title, description, readlink, url }) => (
-        <>
+        <section key={title} className="hero__content">
           <h2>{title}</h2>
           <div>
             <p>{description}</p>
@@ -14,9 +14,9 @@ const HeroNews = ({ news }: heroNewsProps) => {
               {readlink}
             </a>
           </div>
-        </>
+        </section>
       ))}
-    </section>
+    </>
   );
 };
 

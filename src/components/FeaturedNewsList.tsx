@@ -7,7 +7,7 @@ const FeaturedNewsList: React.FC<featuredNewsListProps> = ({ news }) => (
     {news.map(({ image, url, id, title, description }) => (
       <li key={title}>
         <div className="feature--item">
-          <img src={image.src} alt={image.alt} width={125} height={100} />
+          <img {...image} />
           <div className="item--content">
             <span>{id}</span>
             <h2>

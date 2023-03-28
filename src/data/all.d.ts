@@ -23,6 +23,8 @@ interface featuredNews extends sideNews {
   image: {
     src: string;
     alt: string;
+    width?: number;
+    height?: number;
   };
 }
 

@@ -6,10 +6,9 @@ const FooterAttribution: React.FC<footProps> = ({ data }) => {
   return (
     <div className="footer--attribution">
       {data.map(({ beforeText, url, label, fromName, id }) => (
-        <>
+        <span key={id}>
           {beforeText}{" "}
           <a
-            key={id}
             href={url}
             target="_blank"
             aria-label={label}
@@ -18,7 +17,7 @@ const FooterAttribution: React.FC<footProps> = ({ data }) => {
             {fromName}
           </a>
           .{" "}
-        </>
+        </span>
       ))}
     </div>
   );

@@ -32,7 +32,9 @@
       "id": "01",
       "image": {
         "src": "/img/image-retro-pcs.jpg",
-        "alt": "small computer"
+        "alt": "small computer",
+        "width": "125",
+        "height": "100"
       },
       "url": "#",
       "title": "Reviving Retro PCs",
@@ -42,7 +44,9 @@
       "id": "02",
       "image": {
         "src": "/img/image-top-laptops.jpg",
-        "alt": "laptop keys"
+        "alt": "laptop keys",
+        "width": "125",
+        "height": "100"
       },
       "url": "#",
       "title": "Top 10 Laptops of 2022",
@@ -52,7 +56,9 @@
       "id": "03",
       "image": {
         "src": "/img/image-gaming-growth.jpg",
-        "alt": "dualshock"
+        "alt": "dualshock",
+        "width": "125",
+        "height": "100"
       },
       "url": "#",
       "title": "The Growth of Gaming",
