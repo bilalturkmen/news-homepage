@@ -30,15 +30,15 @@ const headerNavbar = ({ links }: NavlinkProps) => {
       >
         <img src={menuOpen} alt="" width={40} height={17} />
       </button>
-      <div id="menu" role="menu" ref={navRef} className="menu ">
+      <div
+        id="menu"
+        role="menu"
+        aria-label="menu"
+        ref={navRef}
+        className="menu "
+      >
         {links.map(({ url, title }) => (
-          <a
-            role="menuitem"
-            key={title}
-            href={url}
-            onClick={showNavbar}
-            aria-label={`Go to ${title} page`}
-          >
+          <a role="menuitem" key={title} href={url} onClick={showNavbar}>
             {title}
           </a>
         ))}
