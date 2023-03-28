@@ -15,7 +15,7 @@
 - Custom components and Responsive navbar created.
 - i tried to get all the data from a single json file.
 - and worked for the good user experience.
-- Getting high rate from [PageSpeed Insights](https://pagespeed.web.dev/analysis/https-lighthearted-crumble-30d48f-netlify-app/pclrhdjyg4?form_factor=mobile)
+- Getting high rate from [PageSpeed Insights](https://pagespeed.web.dev/analysis/https-lighthearted-crumble-30d48f-netlify-app/j87ad3zg96?form_factor=mobile)
 
 ![](./public/screenshot.jpg)
 
