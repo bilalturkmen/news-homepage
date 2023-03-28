@@ -38,20 +38,22 @@ const headerNavbar = ({ links }: NavlinkProps) => {
         className="menu "
       >
         {links.map(({ url, title }) => (
-          <li role="none">
-            <a role="menuitem" key={title} href={url} onClick={showNavbar}>
+          <li key={title} role="none">
+            <a role="menuitem" href={url} onClick={showNavbar}>
               {title}
             </a>
           </li>
         ))}
-        <button
-          aria-owns="menu"
-          aria-controls="menu"
-          className="btn btn--close"
-          onClick={showNavbar}
-        >
-          <img src={menuClose} alt="" width={32} height={31} />
-        </button>
+        <li>
+          <button
+            aria-owns="menu"
+            aria-controls="menu"
+            className="btn btn--close"
+            onClick={showNavbar}
+          >
+            <img src={menuClose} alt="" width={32} height={31} />
+          </button>
+        </li>
       </ul>
     </nav>
   );
