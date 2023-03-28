@@ -45,14 +45,14 @@ const headerNavbar = ({ links }: NavlinkProps) => {
           </li>
         ))}
         <li role="none">
-          <button
+          <span
             aria-owns="menu"
             aria-controls="menu"
             className="btn btn--close"
             onClick={showNavbar}
           >
             <img src={menuClose} alt="" width={32} height={31} />
-          </button>
+          </span>
         </li>
       </ul>
     </nav>
