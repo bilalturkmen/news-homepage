@@ -25,7 +25,7 @@ const headerNavbar = ({ links }: NavlinkProps) => {
       <button aria-label="open menu" className="btn" onClick={showNavbar}>
         <img src={menuOpen} alt="" width={40} height={17} />
       </button>
-      <ul role="menu" ria-label="menu" ref={navRef} className="menu ">
+      <ul role="menu" aria-label="menu" ref={navRef} className="menu ">
         {links.map(({ url, title }) => (
           <li role="none">
             <a role="menuitem" key={title} href={url} onClick={showNavbar}>
