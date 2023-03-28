@@ -22,7 +22,7 @@
 
 :root {
   /* Colors */
-  --clr-s-orange: #c7d5f9;
+  --clr-l-blue: #c7d5f9;
   --clr-s-red: hsl(5, 85%, 63%);
   --clr-o-white: hsl(36, 100%, 99%);
   --clr-g-blue: hsl(233, 8%, 79%);
@@ -62,6 +62,13 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+a:focus-visible {
+  outline-width: 0.125rem;
+  outline-style: dashed;
+  outline-color: var(--clr-s-red);
+  outline-offset: 0.5rem;
 }
 
 body {
@@ -237,7 +244,7 @@ body {
 
 .hero__side h2 {
   font-size: var(--fs-hm);
-  color: var(--clr-s-orange);
+  color: var(--clr-l-blue);
 }
 
 .side__news {
@@ -261,7 +268,7 @@ body {
   text-decoration: none;
 }
 .side__news a:hover {
-  color: var(--clr-s-orange);
+  color: var(--clr-l-blue);
 }
 
 .side__news p {
