@@ -19,7 +19,7 @@
 ![](./public/screenshot.jpg)
 
 - High score received from [PageSpeed Insights](https://pagespeed.web.dev/analysis/https-newshomepagex-netlify-app/xrr1b56xgg?form_factor=mobile)
-  ![](./public/ps-screeen.png)
+  ![](./public/ps-screeen-n.png)
 
 ## 🎉 Build With:
 
