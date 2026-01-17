@@ -1,7 +1,7 @@
 <h1>News homepage</h1>
 <div>
   <h3>
-    <a href="https://lighthearted-crumble-30d48f.netlify.app/"> Live View </a>
+    <a href="https://newshomepagex.netlify.app/"> Live View </a>
     <span> | </span>
     <a href="https://www.frontendmentor.io/solutions/news-homepage-react-with-ts-95FhmSWQp9"> Solution Page </a>
   </h3>
