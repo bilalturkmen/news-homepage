@@ -15,9 +15,11 @@
 - Custom components and Responsive navbar created.
 - i tried to get all the data from a single json file.
 - And efforts were made to provide a good user experience.
-- High score received from [PageSpeed Insights](https://pagespeed.web.dev/analysis/https-newshomepagex-netlify-app/xrr1b56xgg?form_factor=mobile)
 
 ![](./public/screenshot.jpg)
+
+- High score received from [PageSpeed Insights](https://pagespeed.web.dev/analysis/https-newshomepagex-netlify-app/xrr1b56xgg?form_factor=mobile)
+  ![](./public/ps-screen.png)
 
 ## 🎉 Build With:
 
